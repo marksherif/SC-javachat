@@ -4,7 +4,7 @@ This is a rudimentary, multi-threaded, dual-server chatting application built fr
 
 # What you will need
 
-  - Eclipse IDE for Java
+  - Java IDE
   - Thats it really, thats all you need! This is a useless bulletpoint
 
 # Development:
