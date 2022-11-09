@@ -26,6 +26,7 @@ public class Client extends JFrame implements ActionListener{
 	
 	
   public static void main(String[] args) throws Exception {
+  // Frame
   try{
 	Socket socket=new Socket("127.0.0.1",6789);
     DataOutputStream outStream=new DataOutputStream(socket.getOutputStream());
@@ -36,7 +37,6 @@ public class Client extends JFrame implements ActionListener{
     JFrame frame = new JFrame();
     frame.setBounds(0, 0, 800, 500);
     frame.setVisible(true);
-//    frame.setResizable(false);
     
     JPanel chatbox = new JPanel();
     chatbox.setLayout(null);
@@ -94,20 +94,7 @@ public class Client extends JFrame implements ActionListener{
     frame.add(chatbox);
     frame.validate();
     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
 //------------------------------------------------------------------------------------------    
         	
         	Thread sendMessage = new Thread(new Runnable() 
